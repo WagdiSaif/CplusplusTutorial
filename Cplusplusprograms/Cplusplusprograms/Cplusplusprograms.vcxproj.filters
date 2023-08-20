@@ -38,6 +38,9 @@
     <ClCompile Include="ArraysAndPointers.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="SinglyLinkedList.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="Cplusplusprograms.rc">
