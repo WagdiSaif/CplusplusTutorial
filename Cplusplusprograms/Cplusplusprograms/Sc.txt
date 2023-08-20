@@ -1,0 +1,48 @@
+    .data
+    list: .word 2, 4, 6, 8, 10
+    size: .word 5 # number of elements in the list
+
+    .text
+    .globl main
+
+    # main function
+    main:
+     addiu  $sp, $sp, -12 # allocate space on the stack
+     sw     $ra, 4($sp) # save the return address
+     la     $t0, size # load the size of the list
+     lw     $a0, ($t0) # pass the size as argument to LISTADD
+     la     $t1, list # load the address of the list
+     add    $a1, $t1, $zero # pass the address of the list as argument to LISTADD
+     jal    LISTADD # jump to the subroutine
+     lw     $ra, 4($sp) # restore the return address
+     addiu  $sp, $sp, 12 # deallocate space from the stack
+     jr     $ra  # return from the main function
+
+    # subroutine to add a list of numbers
+    #
+    # arguments:
+    #   $a0 = size of the list
+    #   $a1 = address of the list
+    #
+    # returns:
+    #   $v0 = sum of the list
+    LISTADD:
+     addiu  $sp, $sp, -8 # allocate space on the stack
+     sw     $s0, 0($sp) # save the old value of $s0
+     sw     $s1, 4($sp) # save the old value of $s1
+     move   $s0, $a0 # copy the size of the list to $s0
+     move   $s1, $a1 # copy the address of the list to $s1
+     addi   $t0, $zero, 0 # initialize the sum to zero
+    LISTADD_LOOP:
+     beq    $s0, $zero, LISTADD_EXIT # exit the loop if $s0 is zero
+     lw     $t1, ($s1) # load the next element of the list to $t1
+     add    $t0, $t0, $t1 # add the element to the sum
+     addi   $s0, $s0, -1 # decrement the size of the list
+     addi   $s1, $s1, 4 # increment the address of the list
+     j      LISTADD_LOOP # jump back to the loop
+    LISTADD_EXIT:
+     move   $v0, $t0 # copy the sum to $v0
+     lw     $s0, 0($sp) # restore the old value of $s0
+     lw     $s1, 4($sp) # restore the old value of $s1
+     addiu  $sp, $sp, 8 # deallocate space from the stack
+     jr     $ra  # return from the subroutine
