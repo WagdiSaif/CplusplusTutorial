@@ -151,6 +151,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ArraysAndPointers.cpp" />
+    <ClCompile Include="function.cpp" />
     <ClCompile Include="StructCustomType.cpp" />
     <ClCompile Include="SinglyLinkedList.cpp" />
     <ClCompile Include="stdafx.cpp">

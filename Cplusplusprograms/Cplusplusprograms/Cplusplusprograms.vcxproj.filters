@@ -41,6 +41,9 @@
     <ClCompile Include="StructCustomType.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="function.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="Cplusplusprograms.rc">
