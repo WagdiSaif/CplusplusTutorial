@@ -32,13 +32,13 @@
     <ClCompile Include="stdafx.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Cplusplusprograms.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="ArraysAndPointers.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="SinglyLinkedList.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StructCustomType.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
