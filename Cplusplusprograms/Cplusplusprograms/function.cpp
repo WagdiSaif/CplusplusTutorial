@@ -41,7 +41,7 @@ float  Max(float x, float y) {
 void DisplayValue(float x, float y) {
 	cout << "x  value is:    " << x <<"\t y values is: "<<y <<endl;
 }
-int main()
+int mainFun()
 {
 	
 		float x, y, ch;

@@ -143,7 +143,7 @@ void List::traverse(Node* header) {
 
 
 
-int main()
+int mainSLL()
 {
 	List *cll=new List();
 

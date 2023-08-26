@@ -10,7 +10,7 @@ void printlin() {
 	cout << "\n";
 }
 
-int main()
+int mainAPoi()
 {//oneD arrays 
 	ArrayType arrayOneD[] = { 32,67,88,9,89 };
 

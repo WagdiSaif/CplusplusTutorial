@@ -146,12 +146,17 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="resource.h" />
+    <ClInclude Include="ArrayStack.h" />
+    <ClInclude Include="SinglyLL.h" />
+    <ClInclude Include="StackSLL.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ArraysAndPointers.cpp" />
     <ClCompile Include="function.cpp" />
+    <ClCompile Include="Stack.cpp" />
+    <ClCompile Include="StackMainLL.cpp" />
     <ClCompile Include="StructCustomType.cpp" />
     <ClCompile Include="SinglyLinkedList.cpp" />
     <ClCompile Include="stdafx.cpp">
