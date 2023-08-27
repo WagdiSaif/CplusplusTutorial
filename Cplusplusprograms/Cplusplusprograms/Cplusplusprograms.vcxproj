@@ -155,7 +155,7 @@
   <ItemGroup>
     <ClCompile Include="ArraysAndPointers.cpp" />
     <ClCompile Include="function.cpp" />
-    <ClCompile Include="Stack.cpp" />
+    <ClCompile Include="StackAr.cpp" />
     <ClCompile Include="StackMainLL.cpp" />
     <ClCompile Include="StructCustomType.cpp" />
     <ClCompile Include="SinglyLinkedList.cpp" />

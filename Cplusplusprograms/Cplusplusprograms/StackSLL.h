@@ -1,7 +1,7 @@
 #pragma once
 #include "SinglyLL.h"
 template<class T>
-class StackSLL: private SinglyLL<T>
+class StackSLL: protected SinglyLL<T>
 {
 	 int S;
 	
@@ -10,9 +10,10 @@ public:
 	void push(T);
 	void DisplayElements();
 	T pop();
+	T top();
 	bool isEmpty();
-	bool isFull();
-	void reverse();
+
+	
 	int size();
 	StackSLL() :S(0) {}
 };
@@ -31,13 +32,26 @@ void StackSLL<T>::push(T item) {
 
 }
 template <class T>
+T StackSLL<T>::top() {
+	if(isEmpty()) return NULL:
+	return this->gethead()->info;
+
+
+
+
+}
+template <class T>
 void StackSLL<T>::DisplayElements() {
+	if (isEmpty()) return;
 	int i = 0;
-	//while (i<size())
-	//{
-	//	std::cout << data[i] << "\n";
-	//	i++;
-	//}
+	Node<T>* vist = this->gethead();
+	while (i<size())
+	{
+		std::cout <<vist->info << " ";
+		vist = vist->next;
+
+		i++;
+	}
 
 }
 template<class T>
@@ -45,12 +59,13 @@ T StackSLL<T>::pop() {
 	
 	
 		
-	Node<T>* Element = this->getList();
+	Node<T>* Element = this->gethead();
 	
 	if (Element==NULL) return NULL;
 	
 	S--;
-	this->head =this->head->next;
+	this->setHead(this->gethead()->next);
+
 	T value = Element->info;
 	delete Element;
 	return value;
@@ -58,20 +73,15 @@ T StackSLL<T>::pop() {
 template<class T>
 bool StackSLL<T>::isEmpty() {
 
-	return (this->head==NULL);
+	return (this->gethead()==NULL);
 }
 
 template<class T>
 int StackSLL<T>::size() {
 
 
-	return  Siz;
+	return  S;
 }
-template<class T>
-void  StackSLL<T>::reverse() {
-	
 
-	
-}
 
 

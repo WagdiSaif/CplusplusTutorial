@@ -53,10 +53,10 @@
     <ClCompile Include="function.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Stack.cpp">
+    <ClCompile Include="StackMainLL.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="StackMainLL.cpp">
+    <ClCompile Include="StackAr.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

@@ -1,4 +1,4 @@
-
+#include "stdafx.h"
 #include<string>
 #include<iostream>
 
@@ -14,11 +14,12 @@ namespace str {
 		ArrayStack();
 		ArrayStack(int Size);
 		void push(T);
-		void DisplayElements();
+		void printStack();
 		T pop();
 		bool isEmpty();
 		bool isFull();
 		int size();
+		T Top();
 		void reverse();
 		~ArrayStack();
 
@@ -43,7 +44,7 @@ namespace str {
 	 void ArrayStack<T>::push(T item) {
 	
 		 if (isFull()) {
-		 std:cout<< "stack overfllow ";
+		 std::cout<< "stack overfllow ";
 			 return;
 		 }
 		
@@ -51,8 +52,17 @@ namespace str {
 
 
 	}
+template <class T>
+T ArrayStack<T>::Top() {
+
+		 if (isEmpty()) return NULL;
+
+		 data[top];
+
+
+	 }
 	 template <class T>
-	 void ArrayStack<T>::DisplayElements() {
+	 void ArrayStack<T>::printStack() {
 		 int i = 0;
 		 while (i<size())
 		 {
@@ -66,7 +76,7 @@ namespace str {
 		if (isEmpty()) return NULL;
 		T Element = data[top];
 		data[top] = NULL;
-		top--;
+		--top;
 		return Element;
 
 		
@@ -91,15 +101,15 @@ namespace str {
 	template<class T>
 	void  ArrayStack<T>::reverse() {
 		if (isEmpty()) return;
+		ArrayStack<T> temp(this->capacity);
+		for (int i = 0; i<this->capacity; i++)
+			temp.push(data[i]);
 		
-		int count = size()-1;
+
+		for (int i = 0;i<(temp.capacity); i++)
+			data[i] = temp.pop();
 		
-		for (int i = 0; (i < size() && count>=i); i++) {
-			T temp = data[count];
-			data[count--] = data[i];
-			data[i] = temp;
-		
-		}
+	
 		
 		
 		
