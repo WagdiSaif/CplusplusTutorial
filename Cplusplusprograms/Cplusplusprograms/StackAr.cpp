@@ -3,7 +3,7 @@
 #include<iostream>
 #include<string>
 using namespace std;
-int main(){
+void mainS(){
 
 	//stack of integer
 	str::ArrayStack<int>  stack1(4);
@@ -39,5 +39,5 @@ int main(){
 	
 	
 	system("pause");
-	return 0;
+	/*return 0;*/
 }

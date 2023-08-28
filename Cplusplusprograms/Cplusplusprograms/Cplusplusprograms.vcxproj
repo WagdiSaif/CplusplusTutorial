@@ -154,6 +154,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ArraysAndPointers.cpp" />
+    <ClCompile Include="FilesLL.cpp" />
     <ClCompile Include="function.cpp" />
     <ClCompile Include="StackAr.cpp" />
     <ClCompile Include="StackMainLL.cpp" />
