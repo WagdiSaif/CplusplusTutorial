@@ -10,7 +10,7 @@ void printlin() {
 	cout << "\n";
 }
 
-int mainAPoi()
+int mainArrp()
 {//oneD arrays 
 	ArrayType arrayOneD[] = { 32,67,88,9,89 };
 
@@ -66,20 +66,77 @@ int mainAPoi()
 		for (int j = 0; j < columns; j++)
 		{
 
-			cout << *(*(Array2DP + i)+j);
+			cout << *(*(Array2DP + i) + j);
 
 		}
 		printlin();
 
 	}
 
-	//delete array from memory
+	cout << endl << endl << "here i going to display 3D Array\n";
+	int array3D[3][4][3] = { {
 
-	for (int d = 0; d < columns; d++)
-		delete[] Array2DP[d];
-	delete[] Array2DP;
-	delete[] arrayP;
 
+		{ 1,2,3 },
+	{4,5,6},
+	{7,8,9},
+	{17,18,19}
+
+
+		},
+		{
+
+
+		{ 10,11,12 },
+		{13,14,15},
+		{16,17,18},
+		{ 17,18,19 }
+
+
+
+
+		},
+		{
+
+
+			{ 19,20,21 },
+		{22,23,24},
+		{25,26,27},
+		{ 17,18,19 }
+
+
+
+		},
+
+
+
+	};
+
+	for (int a = 0; a < 3; a++) {
+		for (int b = 0; b < 4; b++) {
+			for (int c = 0; c < 3; c++) {
+				cout << array3D[a][b][c]<<" ";
+			}
+			cout << endl;
+		}
+		cout << endl;
+	}
+
+
+	//array dynamically
+
+	int siz = 3;
+	double *array1D = new double[siz];
+	*(array1D+0)= 20.3;
+	array1D[1] = 90.1;
+	array1D[2] = 80.1;
+	cout << "Element  array are:  \n";
+	for (int i = 0; i < siz; i++) {
+		cout << array1D[i]<<" ";
+	}
+
+	cout << endl;
+	delete []array1D;
 	system("pause");
 
 	return 0;

@@ -157,6 +157,7 @@
     <ClCompile Include="File1LL.cpp" />
     <ClCompile Include="file2.cpp" />
     <ClCompile Include="function.cpp" />
+    <ClCompile Include="sortingType.cpp" />
     <ClCompile Include="StackAr.cpp" />
     <ClCompile Include="StackMainLL.cpp" />
     <ClCompile Include="StructCustomType.cpp" />

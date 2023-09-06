@@ -210,7 +210,7 @@ void addRecordTofile(string filename, Inventory *inventory)
 }
 
 //Main function
-int main()
+int mainBin()
 {
 	Inventory *inventory = new Inventory();
 	int choice;
@@ -236,7 +236,7 @@ int main()
 	} while
 		(choice <= 2);
 	delete inventory;
-	system("PAUSE");
+	/*system("PAUSE");*/
 	return 0;
 }
 
