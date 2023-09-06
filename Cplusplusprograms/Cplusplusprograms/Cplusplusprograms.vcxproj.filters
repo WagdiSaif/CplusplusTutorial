@@ -59,7 +59,10 @@
     <ClCompile Include="StackAr.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="FilesLL.cpp">
+    <ClCompile Include="File1LL.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="file2.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
