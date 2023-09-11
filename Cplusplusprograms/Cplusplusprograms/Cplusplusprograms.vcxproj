@@ -160,7 +160,6 @@
     <ClCompile Include="File1LL.cpp" />
     <ClCompile Include="FileBinary.cpp" />
     <ClCompile Include="function.cpp" />
-    <ClCompile Include="sortingType.cpp" />
     <ClCompile Include="StackAr.cpp" />
     <ClCompile Include="StackMainLL.cpp" />
     <ClCompile Include="StructCustomType.cpp" />

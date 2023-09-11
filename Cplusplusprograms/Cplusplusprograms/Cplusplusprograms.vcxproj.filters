@@ -68,9 +68,6 @@
     <ClCompile Include="File1LL.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="sortingType.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="FileBinary.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
