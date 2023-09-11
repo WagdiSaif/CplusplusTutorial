@@ -1,5 +1,5 @@
 #include "stdafx.h"
-#include "ArrayStack.h"
+#include "StackArray.h"
 #include<iostream>
 #include<string>
 using namespace std;

@@ -27,13 +27,19 @@
     <ClInclude Include="resource.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="ArrayStack.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="SinglyLL.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="StackSLL.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StackArray.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DoublyLL.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Qeue.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -62,10 +68,13 @@
     <ClCompile Include="File1LL.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="file2.cpp">
+    <ClCompile Include="sortingType.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="sortingType.cpp">
+    <ClCompile Include="FileBinary.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DoublyLinkedListImplementation.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

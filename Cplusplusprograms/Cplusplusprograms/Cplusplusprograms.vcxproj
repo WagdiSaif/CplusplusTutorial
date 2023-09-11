@@ -145,8 +145,10 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="DoublyLL.h" />
+    <ClInclude Include="Qeue.h" />
     <ClInclude Include="resource.h" />
-    <ClInclude Include="ArrayStack.h" />
+    <ClInclude Include="StackArray.h" />
     <ClInclude Include="SinglyLL.h" />
     <ClInclude Include="StackSLL.h" />
     <ClInclude Include="stdafx.h" />
@@ -154,8 +156,9 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ArraysAndPointers.cpp" />
+    <ClCompile Include="DoublyLinkedListImplementation.cpp" />
     <ClCompile Include="File1LL.cpp" />
-    <ClCompile Include="file2.cpp" />
+    <ClCompile Include="FileBinary.cpp" />
     <ClCompile Include="function.cpp" />
     <ClCompile Include="sortingType.cpp" />
     <ClCompile Include="StackAr.cpp" />
