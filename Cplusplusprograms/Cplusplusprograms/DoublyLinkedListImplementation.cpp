@@ -4,7 +4,7 @@
 #include <iostream>
 #include <string>
 using namespace std;
-int main() {
+int mainQDL() {
 
 	DL::DoublyLL<float> dl;
 	dl.addfront(33.0);

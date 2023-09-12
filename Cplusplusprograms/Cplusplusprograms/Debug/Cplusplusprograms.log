@@ -1,15 +1,18 @@
-﻿Build started 9/11/2023 3:35:20 PM.
+﻿Build started 9/12/2023 1:26:05 PM.
      1>Project "C:\Users\Wagdi.S\Documents\Visual Studio 2015\Projects\CplusplusTutorial\Cplusplusprograms\Cplusplusprograms\Cplusplusprograms.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Yu"stdafx.h" /Fp"Debug\Cplusplusprograms.pch" /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt DoublyLinkedListImplementation.cpp
-         DoublyLinkedListImplementation.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Yu"stdafx.h" /Fp"Debug\Cplusplusprograms.pch" /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt DataTypes.cpp
+         DataTypes.cpp
+     1>c:\users\wagdi.s\documents\visual studio 2015\projects\cplusplustutorial\cplusplusprograms\cplusplusprograms\datatypes.cpp(11): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
        Link:
          C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Wagdi.S\Documents\Visual Studio 2015\Projects\CplusplusTutorial\Cplusplusprograms\Debug\Cplusplusprograms.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"C:\Users\Wagdi.S\Documents\Visual Studio 2015\Projects\CplusplusTutorial\Cplusplusprograms\Debug\Cplusplusprograms.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Wagdi.S\Documents\Visual Studio 2015\Projects\CplusplusTutorial\Cplusplusprograms\Debug\Cplusplusprograms.lib" /MACHINE:X86 Debug\Cplusplusprograms.res
          Debug\ArraysAndPointers.obj
+         Debug\Btree.obj
          Debug\DoublyLinkedListImplementation.obj
          Debug\File1LL.obj
          Debug\FileBinary.obj
          Debug\function.obj
+         Debug\DataTypes.obj
          Debug\StackAr.obj
          Debug\StackMainLL.obj
          Debug\StructCustomType.obj
@@ -20,4 +23,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:01.75
+Time Elapsed 00:00:01.62
