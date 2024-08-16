@@ -23,7 +23,7 @@ T functionChan(T x, T y) {
 }
 typedef string(*info)(string);
 auto PrintName(info funct, string name) {
-	cout << "Name is :";
+	cout<< "Name is :";
 
 	return	funct(name);
 
@@ -34,6 +34,10 @@ string ToString(string x) {
 
 
 	return x;
+}
+int addTowNum(int x, int y) {
+
+	return x + y;
 }
 
 float  Max(float x, float y) {
@@ -56,6 +60,7 @@ int main()
 	//			cin >> a;
 	cout << "sumation numbers is " << Sum(x, y) << endl;
 	cout << "Max number is " << Max(x, y) << endl;
+	cout << "addTowNum int is" << addTowNum(23, 4)<<endl;
 	cout << PrintName([](string x) {
 
 
