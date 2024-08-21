@@ -5,7 +5,7 @@
 
 
 using namespace std;
-float  Sum(float x, float y) {
+float  sum(float x, float y) {
 
 
 	return x + y;
@@ -58,7 +58,7 @@ int main()
 	cin >> y;
 	DisplayValue(x, y);
 	//			cin >> a;
-	cout << "sumation numbers is " << Sum(x, y) << endl;
+	cout << "sumation numbers is " <<sum(x, y) << endl;
 	cout << "Max number is " << Max(x, y) << endl;
 	cout << "addTowNum int is" << addTowNum(23, 4)<<endl;
 	cout << PrintName([](string x) {
